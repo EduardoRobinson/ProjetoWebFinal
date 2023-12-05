@@ -1,0 +1,45 @@
+
+@media screen and (min-width: 1080px){
+    body{
+        background-image: url(https://sindmepa.org.br/wp-content/uploads/2019/07/Post-2-nova.jpg);
+          font-family: 'Courier New', monospace;
+        color: green;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    button{
+         font-family: 'Courier New', monospace;
+        font-size: 20px;
+        font-style: italic;
+        color: grenn;
+        background-color: grenn;
+        margin: 10px;
+    
+    }
+    }
+    
+    @media screen and (max-width: 1080px){
+        body{
+        background-image: url(https://media-manager.noticiasaominuto.com.br/1920/1546254919/naom_5ba17e7561433.jpg);
+          font-family: 'Courier New', monospace;
+        color: green;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    
+    button{
+         font-family: 'Courier New', monospace;
+        font-size: 20px;
+        font-style: italic;
+        color: grenn;
+        background-color: grenn;
+        margin: 10px;
+    
+    }
+    }
+    
+    
+    
+    
+    
+    
