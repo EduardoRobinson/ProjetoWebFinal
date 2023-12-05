@@ -35,9 +35,12 @@ class RegistroController extends Controller
     }
 
     public function delete(Request $request){
+        $erro=null;
         $item=Registro::find($request->id);
         if(!$item){
-            return response()->json(['message' => 'Item não encontrado'], 404);
+            $registros=Registro::all();
+            $erro='Não existe registro com esse ID';
+            return view('apagar',['erro' => $erro,'registros' => $registros]);
         }
         else{
             $item->delete();
@@ -55,6 +58,10 @@ class RegistroController extends Controller
             ]);
             $item->update($request->all());
             return redirect('/registro');
+        }else{
+            $registros=Registro::all();
+            $erro='Não existe registro com esse ID';
+            return view('alterar',['erro' => $erro,'registros' => $registros]);
         }
     }
 

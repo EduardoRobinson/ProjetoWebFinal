@@ -17,7 +17,11 @@
 	<button type="submit" name="botao" value="enviar">Apagar</button>
 	</form>
 </div>
-<div >
+@if(!empty($erro))
+	<h3>{{ $erro }}</h3>
+@endif
+@if(!empty($registros))
+<div>
 <h1>Lista de registros</h1>
 <ul>
 	@foreach($registros as $registro)
@@ -25,5 +29,6 @@
 	@endforeach
 </ul>
 </div>
+@endif
 </body>
 </html>
